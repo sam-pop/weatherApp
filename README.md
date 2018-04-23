@@ -8,4 +8,4 @@ Built with CSS, HTML5, Bootstrap 4, Javascript & JQuery (Ajax).
 API used: OpenWeatherMap
 
 # Demo
-https://sam-pop.github.io/weatherApp/
+https://codepen.io/sam_pop/full/odgaZq/
