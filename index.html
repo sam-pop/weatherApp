@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css'>
+  <link rel='stylesheet prefetch' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel='stylesheet prefetch' href='https://i.icomoon.io/public/temp/b3772388ed/UntitledProject/style.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Lobster|Roboto:100,300,400,700'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='https://use.fontawesome.com/releases/v5.0.10/js/all.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+  <script src="js/index.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header class=" animated fadeInDown">
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary active" id="celciusBtn">
+          <input type="radio" name="options" autocomplete="off" checked=""> C&deg
+        </label>
+        <label class="btn btn-secondary" id="fahrenheitBtn">
+          <input type="radio" name="options" autocomplete="off"> F&deg
+        </label>
+      </div>
+    </header>
+
+    <div class="row">
+      <div class="col text-right animated fadeIn">
+        <h1 style="font-family: 'Lobster', cursive;">Weather App</h1>
+        <div id="loc">Looking for your location...</div>
+        <div id="icon"></div>
+      </div>
+      <div class="col text-left animated fadeIn">
+        <br>
+        <span id="temp"></span>
+        <span id="displayUnit"></span>
+        <span id="desc"></span>
+        <div id="minMax"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-right">
+      </div>
+      <div class="col text-left">
+      </div>
+    </div>
+    <footer class="animated fadeInUp">
+      <p>Created By Samuel Poplovitch.</p>
+    </footer>
+  </div>
+</body>
+
+</html>
