@@ -6,3 +6,6 @@ The temperature can be displayed in Celsius or Fahrenheit.
 
 Built with CSS, HTML5, Bootstrap 4, Javascript & JQuery (Ajax).
 API used: OpenWeatherMap
+
+# Demo
+https://sam-pop.github.io/weatherApp/
