@@ -13,7 +13,11 @@ API used: OpenWeatherMap
 
 # Demo
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://codepen.io/sam_pop/full/odgaZq/
 =======
 https://sam-pop.github.io/weatherApp/
 >>>>>>> fffca4103b6f69dbb024e38b53d94321e817d594
+=======
+https://codepen.io/sam_pop/full/odgaZq/
+>>>>>>> cb2fd82612cba0c698442c6f99b490502893624d
