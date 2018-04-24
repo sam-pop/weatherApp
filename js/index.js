@@ -71,7 +71,6 @@ $(document).ready(function() {
           type: "GET",
           dataType: "json",
           async: "false",
-
           url:
             "https://api.openweathermap.org/data/2.5/weather?lat=" +
             lat +
