@@ -9,3 +9,5 @@ API used: OpenWeatherMap.org
 
 # Demo
 https://sam-pop.github.io/weatherApp/
+
+<img src="https://s17.postimg.cc/sdyd2j9u7/weather_App.jpg" alt="App Preview">
