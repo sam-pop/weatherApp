@@ -23,11 +23,11 @@ var cBtn = document.getElementById("celciusBtn");
 var fBtn = document.getElementById("fahrenheitBtn");
 
 //refresh the page to get the latest weather every ~refreshRate~ minutes
-setTimeout(function() { 
+setTimeout(function () {
   location = "";
 }, refreshRate * 60 * 1000);
 
-$(document).ready(function() {
+$(document).ready(function () {
   //access current location
   var geo = navigator.geolocation.watchPosition(geo_success, geo_error);
 
@@ -40,8 +40,7 @@ $(document).ready(function() {
       type: "GET",
       dataType: "json",
       async: "false",
-      url:
-        "https://api.openweathermap.org/data/2.5/weather?lat=" +
+      url: "https://api.openweathermap.org/data/2.5/weather?lat=" +
         lat +
         "&lon=" +
         lon +
@@ -49,7 +48,7 @@ $(document).ready(function() {
         appID +
         "&units=" +
         units,
-      success: function(json) {
+      success: function (json) {
         runView(json);
         count++;
       }
@@ -63,7 +62,7 @@ $(document).ready(function() {
       url: "https://geoip-db.com/jsonp",
       jsonpCallback: "callback",
       dataType: "jsonp",
-      success: function(location) {
+      success: function (location) {
         lat = location.latitude;
         lon = location.longitude;
         //access weather API
@@ -71,8 +70,7 @@ $(document).ready(function() {
           type: "GET",
           dataType: "json",
           async: "false",
-          url:
-            "https://api.openweathermap.org/data/2.5/weather?lat=" +
+          url: "https://api.openweathermap.org/data/2.5/weather?lat=" +
             lat +
             "&lon=" +
             lon +
@@ -80,7 +78,7 @@ $(document).ready(function() {
             appID +
             "&units=" +
             units,
-          success: function(json) {
+          success: function (json) {
             runView(json);
             count++;
           }
@@ -136,11 +134,11 @@ function convertFtoC(tempInF) {
   }
 }
 
-cBtn.addEventListener("click", function() {
+cBtn.addEventListener("click", function () {
   convertFtoC(temp, "C");
 });
 
-fBtn.addEventListener("click", function() {
+fBtn.addEventListener("click", function () {
   convertCtoF(temp, "F");
 });
 

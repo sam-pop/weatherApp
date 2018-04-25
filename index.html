@@ -17,44 +17,42 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
 </head>
 
-<body>
+<body id="body">
   <div class="container-fluid">
-    <header class=" animated fadeInDown">
+    <!-- Temperature toggle buttons -->
+    <header class="animated fadeInDown">
       <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <label class="btn btn-secondary active" id="celciusBtn">
+        <label class="btn  active" id="celciusBtn">
           <input type="radio" name="options" autocomplete="off" checked=""> C&deg
         </label>
-        <label class="btn btn-secondary" id="fahrenheitBtn">
+        <label class="btn " id="fahrenheitBtn">
           <input type="radio" name="options" autocomplete="off"> F&deg
         </label>
       </div>
     </header>
-
-    <div class="row">
-      <div class="col text-right animated fadeIn">
-        <h1 style="font-family: 'Lobster', cursive;">Weather App</h1>
-        <div id="loc">Looking for your location...</div>
-        <div id="icon"></div>
-      </div>
-      <div class="col text-left animated fadeIn">
-        <br>
-        <span id="temp"></span>
-        <span id="displayUnit"></span>
-        <span id="desc"></span>
-        <div id="minMax"></div>
-      </div>
+    <div class="container text-center animated fadeInUp">
+      <div class="row">
+        <div class="col cardMain mx-auto">
+          <br>
+          <h1 style="font-family: 'Lobster', cursive;">Weather App</h1>
+          <div id="loc">Looking for your location...</div>
+          
+          <span id="temp"></span>
+          <span id="displayUnit"></span>
+          <div id="minMax"></div>
+          <br>
+          <span id="icon"></span>
+          <span id="desc"></span>          
+        </div>
     </div>
-    <div class="row">
-      <div class="col text-right">
-      </div>
-      <div class="col text-left">
-      </div>
-    </div>
-    <footer class="animated fadeInUp">
-      <p>Created By Samuel Poplovitch.</p>
-    </footer>
   </div>
-  
+
+
+  </div>
+  <!-- END OF container -->
+  <footer class="animated fadeInUp">
+    <p>Created By Samuel Poplovitch.</p>
+  </footer>
 </body>
 
 <script src="js/index.js"></script>
