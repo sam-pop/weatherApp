@@ -10,4 +10,4 @@ API used: OpenWeatherMap.org
 # Demo
 https://sam-pop.github.io/weatherApp/
 
-<img src="https://s17.postimg.cc/z7r7c11ov/weather_App2.jpg" alt="App Preview">
+<img src="https://s17.postimg.cc/nin7o3l0v/weather_App2.jpg" alt="App Preview">
